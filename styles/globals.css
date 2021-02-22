@@ -14,3 +14,18 @@ a {
 * {
   box-sizing: border-box;
 }
+
+nav{
+  height: 12vh;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo{
+  font-size: 2.5em;
+  font-family: 'Courier New', Courier, monospace;
+  font-variant: small-caps;
+  color: darkslategray;
+  font-weight: bolder;
+}
