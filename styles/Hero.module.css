@@ -1,0 +1,17 @@
+.hero{
+    min-height: 35vw;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero2{
+    min-height: 50vh;
+    background: chartreuse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

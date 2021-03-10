@@ -1,22 +1,18 @@
 import Head from 'next/head'
+import Hero from '../compons/Hero'
 import styles from '../styles/Home.module.css'
+
 
 export default function Home() {
   return (
-    <div className={styles.main}>
+    <>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h2>This is Home page of Next js</h2>
-      <div className={styles.grid}>
-        <div className={styles.card}>
-          <div className={styles.code}>
-            <h3>This is the heading</h3>
-          </div>
-          <p>This is the text paragraph tag in the card of next demo</p>
-        </div>
+      <div className={styles.main}>
+      <Hero />
       </div>
-    </div>
+    </>
   )
 }

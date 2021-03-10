@@ -2,6 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -15,17 +16,19 @@ a {
   box-sizing: border-box;
 }
 
-nav{
-  height: 12vh;
-  border-bottom: 1px solid #ccc;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.more{
+  padding: 10px 15px;
+  
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+  color: #181515;
+  margin-left: 3rem;
+  cursor: pointer;
+  transition: background .5s ease-in-out;
 }
-.logo{
-  font-size: 2.5em;
-  font-family: 'Courier New', Courier, monospace;
-  font-variant: small-caps;
-  color: darkslategray;
-  font-weight: bolder;
+
+.more:hover{
+  background: #0c54f0;
+  clip-path: ellipse(130px 140px at 10% 20%);
 }

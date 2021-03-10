@@ -1,16 +1,22 @@
-import styles from '../styles/Home.module.css'
-import Link from 'next/link'
+import NavStyle from "../styles/Nav.module.css";
+import Link from "next/link";
 
 const Navbar = () => {
-    return (
-        <nav>
-            <div className='logo'><Link href='/'>Logo</Link></div>
-            <ul className={styles.navgrid}>
-                <li><Link href='/'>Home</Link></li>
-                <li><Link href='/about'>About</Link></li>
-            </ul>
-        </nav>
-    )
-}
+  return (
+    <nav className={NavStyle.nav}>
+      <div className={NavStyle.logo}>
+        <Link href="/">Abhishek</Link>
+      </div>
+      <ul className={NavStyle.navgrid}>
+        <li>
+          <Link href="/about">About us</Link>
+        </li>
+        <li>
+          <Link href="/article">Blogs</Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;
